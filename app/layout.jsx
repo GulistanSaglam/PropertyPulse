@@ -7,7 +7,7 @@ import AuthProvider from '@/components/AuthProvider';
 import { GlobalProvider } from '@/context/Global';
 
 export const metadata = {
-    title: 'Property App',
+    title: 'Rental App',
     description: 'Find The Perfect Rental',
     keywords: 'rental, find rentals, perfect rentals'
 };
