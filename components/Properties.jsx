@@ -26,17 +26,6 @@ const Properties = () => {
         fetchProperties();
     }, [])
   
-<<<<<<< HEAD
-    // if(properties){
-    //   properties.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
-    // }
-   
-=======
-     /*if(properties){
-         properties.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
-     }*/
-    
->>>>>>> 64e8b977cc55a7a52a4c407c7b18b57c9dc5adf9
   
   return loading ? (<Spinner loading={loading}/>) : (
     <section class="px-4 py-6">
