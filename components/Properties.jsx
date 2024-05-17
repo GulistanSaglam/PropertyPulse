@@ -26,8 +26,10 @@ const Properties = () => {
         fetchProperties();
     }, [])
   
-
-    properties.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+    // if(properties){
+    //   properties.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+    // }
+   
   
   return loading ? (<Spinner loading={loading}/>) : (
     <section class="px-4 py-6">
