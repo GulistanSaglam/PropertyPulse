@@ -7,6 +7,8 @@ import PropertyHeader from "@/components/PropertyHeader";
 import PropertyDetails from "@/components/PropertyDetails";
 import { FaArrowLeft } from 'react-icons/fa'
 import Spinner from '@/components/Spinner'
+import PropertyImages from "@/components/PropertyImages";
+import PropertyContactForm from "@/components/PropertyContactForm";
 
 const SinglePropertyPage = () => {
   const { id } = useParams();
@@ -62,7 +64,7 @@ const SinglePropertyPage = () => {
         
           <PropertyDetails property={property}/> 
 
-          <aside className="space-y-4">       
+          {/* <aside className="space-y-4">       
             <button
               className="bg-pink-500 hover:bg-pink-600 text-white font-bold w-full py-2 px-4 rounded-full flex items-center justify-center"
             >
@@ -145,10 +147,13 @@ const SinglePropertyPage = () => {
                 </div>
               </form>
             </div>
-          </aside>
+          </aside> */}
+              <PropertyContactForm property = {property}/>
         </div>
       </div>
     </section>
+
+    <PropertyImages images={property.images}/>
         </>
       )}
     </>
