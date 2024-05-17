@@ -26,9 +26,9 @@ const Properties = () => {
         fetchProperties();
     }, [])
   
-     if(properties){
+     /*if(properties){
          properties.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
-     }
+     }*/
     
   
   return loading ? (<Spinner loading={loading}/>) : (
